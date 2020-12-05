@@ -42,7 +42,7 @@ namespace DotNetHttpClientFactory
             FactoryName = name;
             _clientAction = action;
             InitializeJob();
-        }x§
+        }
 
         /// <summary>
         /// Creates a new http client factory with http client and http client handler options

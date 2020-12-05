@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientFactoryForDotNet", "HttpClientFactoryForDotNet\HttpClientFactoryForDotNet.csproj", "{E3293A6D-8FFE-46EC-93A9-EA141BC1A8A3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetHttpClientFactory", "DotNetHttpClientFactory\DotNetHttpClientFactory.csproj", "{B02A9278-65EC-46BF-A3A0-39642E3E1FD3}"
 EndProject
 Global
