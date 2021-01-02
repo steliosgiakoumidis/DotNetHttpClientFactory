@@ -5,13 +5,14 @@
         <id>Contoso.Utility.UsefulStuff</id>
 
         <!-- The package version number that is used when resolving dependencies -->
-        <version>1.0.0</version>
+        <version>1.0.3</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
         <authors>Stylianos Giakoumidis</authors>
 
         <!-- Project URL provides a link for the gallery -->
-        <projectUrl></projectUrl>
+        <RepositoryUrl>https://github.com/steliosgiakoumidis/DotNetHttpClientFactory</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
         
 
         <!-- Any details about this particular release -->

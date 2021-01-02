@@ -92,8 +92,13 @@ namespace DotNetHttpClientFactory
         /// <returns>An HttpClient</returns>
         public HttpClient GetClient()
         {
-            _handlerQueue.TryPeek(out var httpClientHandler);
-            var httpClient = new System.Net.Http.HttpClient(httpClientHandler, false);
+            var handlerPeekedSuccesfully = _handlerQueue.TryPeek(out var httpClientHandler);
+            if (!handlerPeekedSuccesfully)
+            {
+                throw new InvalidOperationException("No handler was found enqueued");
+            }
+            
+            var httpClient = new HttpClient(httpClientHandler, false);
             _clientAction?.Invoke(httpClient);
             
             return httpClient;
